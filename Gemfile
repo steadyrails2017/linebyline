@@ -16,6 +16,8 @@ gem 'mysql2'
 gem "devise", '~> 4.0.0.rc1'
 # Install SimpleForm
 gem 'simple_form'
+# Install the Paperclip Gem
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 # Had issues with Devise and BCrypt so this is the config that works
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
