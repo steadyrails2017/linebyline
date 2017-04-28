@@ -10,15 +10,22 @@ end
 gem 'rails', '~> 5.1.0.rc2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use mysql2 as the database
 gem 'mysql2'
+# Install Devise
 gem "devise", '~> 4.0.0.rc1'
+# Install SimpleForm
 gem 'simple_form'
+# Install Bootstrap
 gem 'bootstrap'
+# Had issues with Devise and BCrypt so this is the config that works
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Install Bootstrap-Sass
+gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
