@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.0.rc2'
 gem 'sqlite3'
 gem 'mysql2'
 gem "devise", '~> 4.0.0.rc1'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
