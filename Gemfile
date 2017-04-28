@@ -16,8 +16,7 @@ gem 'mysql2'
 gem "devise", '~> 4.0.0.rc1'
 # Install SimpleForm
 gem 'simple_form'
-# Install Bootstrap
-gem 'bootstrap'
+
 # Had issues with Devise and BCrypt so this is the config that works
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Puma as the app server
@@ -53,6 +52,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
+  gem 'sass-rails', '~> 5.0'
 end
 
 group :development do
