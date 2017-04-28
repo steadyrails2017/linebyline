@@ -22,9 +22,14 @@ gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'b
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
+gem 'sass', "~> 3.4"
 gem 'sass-rails', '~> 5.0'
+gem 'bourbon'
+gem 'neat'
 # Install Bootstrap-Sass
-gem 'bootstrap-sass'
+gem 'bootstrap-sass',  '3.3.6'
+gem 'sprockets'
+gem 'jquery-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -53,6 +58,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
   gem 'sass-rails', '~> 5.0'
+  gem "pry-rails"
 end
 
 group :development do
