@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.0.rc2'
 gem 'sqlite3'
 gem 'mysql2'
 gem "devise", '~> 4.0.0.rc1'
+gem 'simple_form'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -40,7 +41,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails.git'
+  gem 'rspec-rails', :groups => [:development, :test]
+  gem 'factory_girl_rails'
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
 end
